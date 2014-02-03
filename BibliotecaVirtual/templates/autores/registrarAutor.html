@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>REGISTRAR AUTOR</title>
+</head>
+<body>
+	<h1>REGISTRAR AUTOR</h1>
+	<form method="POST" enctype="multipart/form-data"> {% csrf_token %} 
+		<!--enctype="multipart/form-data" necesario para formularios con imagenes-->
+		
+		{{form.as_p}}
+		<input type="submit", value="Registrar">
+	</form>
+</body>
+</html>

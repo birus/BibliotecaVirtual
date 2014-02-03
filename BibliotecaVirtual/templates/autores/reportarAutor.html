@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="{{STATIC_URL}}css/style.css">
+	<title>REPORTAR AUTOR</title>
+</head>
+<body>
+	<h1>REPORTAR AUTOR</h1>
+	<ul>
+		{% for autor in object_list %}
+			<li><b>Nombre : </b>{{autor.nombre}}</li>
+			<li><b>Pais : </b>{{autor.pais}}</li>
+			<li><b>Descripcion : </b>{{autor.descripcion}}</li>
+			<li><b>Foto : </b><img src="{{MEDIA_URL}}{{autor.foto}}"></li>
+		{% endfor %}
+	</ul>
+
+</body>
+</html>
